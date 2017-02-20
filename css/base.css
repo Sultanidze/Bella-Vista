@@ -621,12 +621,37 @@ html{
     font-size: 0;
 }
 .b-apartment{
+    margin: 0.5px auto;
     border-right: 1px solid #fff; 
-    border-bottom: 1px solid #fff; 
+/*    border-bottom: 1px solid #fff; */
     display: inline-block;
+    padding-bottom: 24.117%;
 /*    float: left;*/
     position: relative;
-/*    overflow: hidden;*/
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.b-apartment_standard1{
+    width: 34.453%;
+    background-image: url(../img/standard1.jpg);
+    /* background-origin: padding-box; */
+}
+.b-apartment_standard2{
+    width: 29.329%;
+    background-image: url(../img/standard2.jpg);
+}
+.b-apartment_halfLuxe{
+    width: 33.393%;
+    background-image: url(../img/half-luxe.jpg);
+}
+.b-apartment_familyLuxe{
+    width: 46.2015%;
+    background-image: url(../img/family-luxe.jpg);
+}
+.b-apartment_atticLuxe{
+    width: 51.061%;
+    background-image: url(../img/attic-luxe.jpg);
 }
 .b-apartment__description{
     width: 100%;
@@ -663,8 +688,9 @@ html{
 }
 .b-description__info p{
     text-align: center;
-    margin: 0 20px 25px;
-    height: 75px;
+    margin: 0 20px 10px;
+    height: 90px;
+    overflow: hidden;
 }
 .b-link__cover{
 /*    display: block;*/
@@ -2010,6 +2036,10 @@ html{
     }
 }
 @media (max-width: 884px){
+    .b-description__heading {
+        font-size: 15px;
+        margin: 10px 0;
+    }
     .b-menu__item{
         padding: 0 1.7%;
     }
@@ -2119,6 +2149,14 @@ html{
     }
     .b-section__header{
         font-size: 17px;
+    }
+    .b-apartment {
+        width: 100%;
+        padding-bottom: 70%;
+    }
+    .b-description__heading {
+        font-size: 16px;
+        margin: 25px 0 20px;
     }
     .b-about__block{
         width: 100%;
