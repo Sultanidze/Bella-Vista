@@ -1867,6 +1867,7 @@ html{
 .b-article_season .b-response__text{
     margin-top: 2%;
 }
+
 @media (min-width: 1200px){
     .b-news__articles{
         padding-bottom: 15px;    
