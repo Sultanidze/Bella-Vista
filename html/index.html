@@ -112,21 +112,24 @@
                     <form action="" class="b-section__form b-form b-form_bookOnline container-fluid">
                         <div class="b-form__header">Забронировать ONLINE</div>
                         <div class="b-form__grid b-form__grid_half">
-                            <label for="from" class="sr-only">From</label>
-                            <input type="text" id="from" name="from" class="b-input_date b-input_from" placeholder="Дата заезда">
+                            <label for="from" class="sr-only">Дата заезда</label>
+                            <input type="text" id="from" name="from" class="b-input_date b-input_from" required placeholder="Дата заезда">
                         </div>
                         <div class="b-form__grid b-form__grid_half">
-                            <label for="to" class="sr-only">to</label>
-                            <input type="text" id="to" name="to" class="b-input_date  b-input_to" placeholder="Дата выезда">
+                            <label for="to" class="sr-only">Дата выезда</label>
+                            <input type="text" id="to" name="to" class="b-input_date  b-input_to" required placeholder="Дата выезда">
                         </div>
                         <div class="b-form__grid b-form__grid_half">
-                            <input type="text" name="name" placeholder="Ваше имя">
+                            <label for="name" class="sr-only">Ваше имя</label>
+                            <input type="text" name="name" id="name" required pattern="[A-Za-zА-Яа-яЁёІіЇї\s]{2,}" placeholder="Ваше имя">
                         </div>
                         <div class="b-form__grid b-form__grid_half">
-                            <input type="tel" name="phoneNum" value="+380">
+                            <label for="phone" class="sr-only">Ваш номер телефона</label>
+                            <input type="tel" name="phoneNum" id="phone" required pattern="[0-9()\s-]{15}" placeholder="+38(___)-___-__-__">
                         </div>
                         <div class="b-form__grid b-form__grid_full">
-                            <select name="accomodation">
+                            <label for="accomodation" class="sr-only">Размещение</label>
+                            <select name="accomodation" id="accomodation" required>
                                 <option value="" disabled selected hidden>Размещение</option>
                                 <option value="1">Вариант 1</option>
                                 <option value="2">Вариант 2</option>
@@ -634,14 +637,15 @@
             <section class="b-section_modal">
                 <form action="" class="b-responseForm b-form b-form_modal">
                     <div class="b-responseForm__header b-modalForm__header">
-                        Форма обратной связи
+                        Заказать звонок
                     </div>
                     <div class="b-form__grid b-form__grid_modal b-form__grid_full">
-                        <input type="text" name="name" placeholder="Ваше имя">
+                        <label for="nameCallback" class="sr-only">Ваше имя</label>
+                        <input type="text" name="name" id="nameCallback" required pattern="[A-Za-zА-Яа-яЁёІіЇї\s]{2,}" placeholder="Ваше имя">
                     </div>
                     <div class="b-form__grid b-form__grid_modal b-form__grid_full">
-                        <input type="tel" name="phoneNum" placeholder="Ваш номер телефона">
-                    </div>
+                        <label for="phoneCallback" class="sr-only">Ваш номер телефона</label>
+                        <input type="tel" name="phoneNum" id="phoneCallback" required pattern="[0-9()\s-]{15}" placeholder="Ваш номер телефона">
                     <div class="b-form__grid b-form__grid_modal b-form__grid_full">
                         <input type="submit" value="отправить" class="b-button_response b-button_book b-button_modal">
                     </div>
@@ -658,6 +662,7 @@
 		<script src="../fancybox/lib/jquery.mousewheel.pack.js?v=3.1.3"></script>
 		<script src="../fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 		<script src="../fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+		<script src="../js/jquery.maskedinput.min.js"></script>
 		<script src="../js/main.js"></script>
         <!--[if IE 9]>
             <script>

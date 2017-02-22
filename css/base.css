@@ -1627,6 +1627,7 @@ html{
     color: transparent;
 }
 .b-responseForm__rating{
+    position: relative;
     direction: rtl;
     text-align: left;
 }
@@ -1672,7 +1673,7 @@ html{
 }
 .b-responseForm__rating:not(:checked)>input{
     position:absolute;
-    left:-9999px;
+/*    left:-9999px;*/
     clip:rect(0,0,0,0);
 }
 .b-responseForm__rating:not(:checked)>label{
@@ -1688,7 +1689,6 @@ html{
 {
     content: '★';
 }
-.b-responseForm__rating{}
 .b-responseForm input[type="submit"]{
     padding: 0 20px;
     width: auto;

@@ -315,20 +315,24 @@
                             Написать отзыв
                         </div>
                         <div class="b-form__grid b-form__grid_response b-form__grid_half">
-                            <input type="text" name="name" placeholder="Ваше имя">
+                            <label for="firstName" class="sr-only">Ваше имя</label>
+                            <input type="text" name="firstName" id="firstName" required pattern="[A-Za-zА-Яа-яЁёІіЇї\s]{2,}" placeholder="Ваше имя">
                         </div>
                         <div class="b-form__grid b-form__grid_response b-form__grid_half">
-                            <input type="email" name="email" placeholder="Ваш e-mail">
+                            <label for="email" class="sr-only">Ваш e-mail</label>
+                            <input type="email" name="email" required id="email" placeholder="Ваш e-mail">
                         </div>
                         <div class="b-form__grid b-form__grid_response b-form__grid_full">
-                            <textarea name="responce" rows="3" placeholder="Написать отзыв&hellip;"></textarea>
+                            <label for="response" class="sr-only">Отзыв</label>
+                            <textarea name="responce" rows="3" placeholder="Написать отзыв&hellip;" required id="response"></textarea>
                         </div>
                         <div class="b-form__grid b-form__grid_response b-form__grid_half">
                             <input type="text" name="code" placeholder="Вставить код">
                         </div>
                         <div class="b-form__grid b-form__grid_response b-form__grid_half">
                             <div class="b-upload">
-                                <input type="file" name="files"  multiple accept="image/*">
+                               <label for="images" class="sr-only">Прикрепить изображение</label>
+                                <input type="file" name="files" multiple accept="image/*" id="images">
                                 <div class="b-upload__decoration">
                                     <span class="b-upload__icon"><img src="../img/responses/addfile-icon.png" alt=""></span>
                                     <span class="b-upload__text"><span class="hidden-600">Прикрепить</span> изображение</span>
@@ -337,7 +341,7 @@
                         </div>
                         <div class="b-form__grid b-form__grid_response b-form__grid_full">
                             <div class="b-responseForm__rating">
-                                <input type="radio" id="star5" name="rating" value="5"><label for="star5" title="восхитительно"></label>
+                                <input type="radio" id="star5" name="rating" value="5" required><label for="star5" title="восхитительно"></label>
                                 <input type="radio" id="star4" name="rating" value="4"><label for="star4" title="отлично"></label>
                                 <input type="radio" id="star3" name="rating" value="3"><label for="star3" title="хорошо"></label>
                                 <input type="radio" id="star2" name="rating" value="2"><label for="star2" title="удовлетворительно"></label>
@@ -423,6 +427,7 @@
 		<script src="../fancybox/lib/jquery.mousewheel.pack.js?v=3.1.3"></script>
 		<script src="../fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 		<script src="../fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+		<script src="../js/jquery.maskedinput.min.js"></script>
 		<script src="../js/main.js"></script>
         <!--[if IE 9]>
             <script>

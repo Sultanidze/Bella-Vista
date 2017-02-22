@@ -13,15 +13,18 @@
             <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
             <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
-        <meta property="og:url" content="https://#">
+        
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:url" content="http://<?php echo $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] ?>">
+        <meta name="twitter:title" content="Заголовок в Твітері">
+        <meta name="twitter:description" content="Опис того, що буде в твітері">
+        <meta name="twitter:image:src" content="../img/ny2017.jpg">
+
+        <meta property="og:url" content="http://<?php echo $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] ?>">
+        <meta property="og:site_name" content="Bella Vista">
         <meta property="og:title" content="My title in Head fb, google+">
         <meta property="og:description" content="My description fb, google+">
         <meta property="og:image" content="../img/ny2017.jpg">
-        
-        <meta name="twitter:card" content="summary_large_image">
-        <meta property="twitter:title" content="Заголовок в Твітері">
-        <meta name="twitter:description" content="Опис того, що буде в твітері">
-        <meta property="twitter:image:src" content="../img/ny2017.jpg">
 	</head>
 	<body>
 		<div class="b-main">
@@ -143,10 +146,10 @@
                                 <div class="b-social_ny">
                                     Поделится новостью через социальные сети:
                                     <span class="b-ny__share">
-                                        <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] ?>" target="_blank" title="Поделиться на Facebook" class="b-ny__link_soc"><span class=""><img src="../img/facebook-icon.png" alt=""></span></a>
-                                        <a href="https://plus.google.com/share?url=<?php echo $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] ?>" target="_blank" title="Поделиться на Google+" class="b-ny__link_soc"><span class=""><img src="../img/google-plus-icon.png" alt=""></span></a>
-                                        <a href="https://twitter.com/intent/tweet?source=<?php echo $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] ?>&text=:%20{адрес страницы}" title="Твитнуть" target="_blank" class="b-ny__link_soc" ><span class=""><img src="../img/twitter-icon.png" alt=""></span></a>
-                                        <a href="https://vk.com/share.php?url=<?php echo $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] ?>" target="_blank" title="Поделиться ВКонтакте" class="b-ny__link_soc"><span class=""><img src="../img/vk-icon.png" alt=""></span></a>
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u=http://<?php echo $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] ?>" target="_blank" title="Поделиться на Facebook" class="b-ny__link_soc"><span class=""><img src="../img/facebook-icon.png" alt=""></span></a>
+                                        <a href="https://plus.google.com/share?url=http://<?php echo $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] ?>" target="_blank" title="Поделиться на Google+" class="b-ny__link_soc"><span class=""><img src="../img/google-plus-icon.png" alt=""></span></a>
+                                        <a href="https://twitter.com/intent/tweet?source=http://<?php echo $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] ?>&text=http://<?php echo $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] ?>" title="Твитнуть" target="_blank" class="b-ny__link_soc" ><span class=""><img src="../img/twitter-icon.png" alt=""></span></a>
+                                        <a href="https://vk.com/share.php?url=http://<?php echo $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] ?>" target="_blank" title="Поделиться ВКонтакте" class="b-ny__link_soc"><span class=""><img src="../img/vk-icon.png" alt=""></span></a>
                                     </span>
                                 </div>
                                 

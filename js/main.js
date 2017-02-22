@@ -54,6 +54,9 @@ $.datepicker.setDefaults($.datepicker.regional['ru']);
  
       return date;
     };
+//	Додаємо маску на номер телефона в формах
+	$(".b-form input[type='tel']").mask("(999) 999-99-99");
+
 //	стилізуємо select
 	$('select').selectric({
 		onInit: function() {
