@@ -641,11 +641,11 @@
                     </div>
                     <div class="b-form__grid b-form__grid_modal b-form__grid_full">
                         <label for="nameCallback" class="sr-only">Ваше имя</label>
-                        <input type="text" name="name" id="nameCallback" required pattern="\D{2,}" placeholder="Ваше имя">
+                        <input type="text" name="name" id="nameCallback" required pattern="[A-Za-zА-Яа-яЁёІіЇї\s]{2,}" placeholder="Ваше имя">
                     </div>
                     <div class="b-form__grid b-form__grid_modal b-form__grid_full">
                        <label for="phoneCallback" class="sr-only">Ваш номер телефона</label>
-                         <input type="tel" name="phoneNum" id="phoneCallback" required pattern="\d{7}" placeholder="+38">
+                         <input type="tel" name="phoneNum" id="phoneCallback" required pattern="[0-9()\s-]{15}" placeholder="+38">
                     <div class="b-form__grid b-form__grid_modal b-form__grid_full">
                         <input type="submit" value="отправить" class="b-button_response b-button_book b-button_modal">
                     </div>
