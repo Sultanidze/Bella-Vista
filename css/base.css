@@ -966,14 +966,15 @@ html{
     clear: both;
 }
 .b-gallery__item{
-/*    float: left;*/
-    display: inline-block;
+    float: left;
+/*    display: inline-block;*/
     position: relative;
     overflow: hidden;
     border: 2px solid #fff;
     background-color: #000;
 }
 .b-gallery__item>img{
+    width: 100%;
     opacity: 1;
     transition: all 300ms ease;
     -moz-transition: all 300ms ease;
@@ -986,7 +987,7 @@ html{
 }
 .b-gallery__overlay{
     position: absolute;
-    top: 0;
+    top: 50%;
     width: 100%;
     height: 112px;
     display: table;
@@ -996,6 +997,7 @@ html{
     text-align: center;
     vertical-align: middle;
     opacity: 0;
+    transform: translateY(-50%);
     transition: opacity 300ms ease;
     -moz-transition: opacity 300ms ease;
     -webkit-transition: opacity 300ms ease;
@@ -1898,6 +1900,14 @@ html{
     .b-news__articles{
         padding-bottom: 15px;    
     }
+    .b-gallery__item{
+        width: 50%;
+    }
+}
+@media (max-width: 1200px){
+    .b-gallery__item{
+        width: 33.333%;
+    }
 }
 @media (max-width: 1135px){
     .b-menu__item{
@@ -2105,6 +2115,9 @@ html{
     }
     .b-about__link{
         font-size: 11px;
+    }
+    .b-gallery__item{
+        width: 50%;
     }
     .b-nav__block {
         margin-right: 2%;
@@ -2329,6 +2342,9 @@ html{
     }
 }
 @media (max-width: 550px){
+    .b-gallery__item{
+        width: 100%;
+    }
     .b-apartmentSlider .b-mainGallery__item{
         width: 95px;
         height: 95px;

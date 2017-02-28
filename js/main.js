@@ -175,3 +175,15 @@ $.datepicker.setDefaults($.datepicker.regional['ru']);
 		filesField.text(filesText + " выбрано");
 	});
 });
+ 
+var $galleryMsnry = $(".b-gallery__container.js-masonry__container").masonry(
+    {
+        itemSelector: '.b-gallery__item',
+        // columnWidth:  function( containerWidth ) { return containerWidth / columns; },
+        columnWidth: '.b-gallery__item',
+		percentPosition: true
+    });
+
+$galleryMsnry.imagesLoaded().progress( function() {
+  $galleryMsnry.masonry('layout');
+});
