@@ -113,7 +113,22 @@ $.datepicker.setDefaults($.datepicker.regional['ru']);
 			}
 		]
 	});
-	
+	// --youtube video
+	$(".various").fancybox({
+        
+		padding : [0, 0, 0, 0],
+		width	: 854,
+		height	: 480,
+        maxWidth: '100%',
+        aspectRatio: true,
+		fitToView	: true,
+//		width		: '100%',
+//		height		: '34%',
+		autoSize	: true,
+		closeClick	: false,
+		openEffect	: 'none',
+		closeEffect	: 'none'
+	});
 	//--галереї
 	$(".fancybox-thumb").fancybox({
 		padding : 0,
@@ -129,7 +144,7 @@ $.datepicker.setDefaults($.datepicker.regional['ru']);
 	});
 //----модальні вікна
 	//--колбек форма
-	$(".js-modal_callback, .js-modal_request, .js-modal_success").fancybox({
+	$(".js-modal_callback, .js-modal_request, .js-modal_success, .js-modalResponce_success").fancybox({
 		padding : [30, 10, 35, 10],
 		margin : [0, 5, 0, 5],
 		autoWidth: true,
@@ -155,11 +170,14 @@ $.datepicker.setDefaults($.datepicker.regional['ru']);
 		event.preventDefault();
 		$(".js-modal_request").trigger("click");
 	});
-	$(".js-btn_success").click(function(event){	//призначаємо модалку бронювання на кнопку
-		event.preventDefault();
-		$(".js-modal_success").trigger("click");
-	});
-	
+//	$(".js-btn_success").click(function(event){	//призначаємо модалку успішної заявки на приховане посилання
+//		event.preventDefault();
+//		$(".js-modal_success").trigger("click");
+//	});
+//	$(".js-btn_success").click(function(event){	//призначаємо модалку успішного відгуку на приховане посилання
+//		event.preventDefault();
+//		$(".js-modalResponce_success").trigger("click");
+//	});
 	//вивід кількості файлів для відвантаження
 	$('.b-responseForm input[type="file"]').change(function () {
 		var  filesNum = this.files.length
