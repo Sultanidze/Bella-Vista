@@ -63,11 +63,8 @@ $.datepicker.setDefaults($.datepicker.regional['ru']);
 			$(".selectric-wrapper>.selectric-items ul>li.disabled").remove();	//прибираємо з меню неактивний пункт
 		}
 	});
-  // $('.js-masonryGrid').masonry({
-	// // options
-	// itemSelector: '.js-masonryGrid__item',
-	// fitWidth: true
-  // })
+// iphone hover animations fix
+$(".b-apartment__description, .b-season__block").hover(function(){})
 //	ініціалізація слайдера
 	// main slider
 	$('.b-slider').slick({

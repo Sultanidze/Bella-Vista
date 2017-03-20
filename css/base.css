@@ -702,6 +702,7 @@ html{
 .b-apartment__link{
     text-decoration: underline;
     color: #fff;
+    cursor: pointer;
     transition: color 300ms ease;
     -moz-transition: color 300ms ease;
     -webkit-transition: color 300ms ease;
@@ -1480,6 +1481,7 @@ html{
     line-height: 27px;
     color: #fff;
     text-decoration: none;
+    cursor: pointer;
     transition: text-decoration 300ms ease;
     -moz-transition: text-decoration 300ms ease;
     -webkit-transition: text-decoration 300ms ease;
