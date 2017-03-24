@@ -300,14 +300,17 @@ html{
     font-size: 0;
 }
 .b-menu__item{   
-    display: inline-block;
-    padding: 0 3.8%;
     position: relative;
     top: 1px;
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+    padding: 0 3.8%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 33px;
 /*    box-sizing: border-box;*/
 /*    width: 25%;*/
 /*    height: 35px;*/
-    border-bottom: 2px solid transparent;
 }
 .b-menu__item:first-child{
 /*    padding-left: 0;*/
@@ -325,9 +328,6 @@ html{
 }
 .b-menu__link{
     color: #000;
-    font-family: "Open Sans", sans-serif;
-    font-size: 14px;
-    line-height: 33px;
     text-decoration: none;
     transition: color 300ms ease;
     -moz-transition: color 300ms ease;
@@ -336,6 +336,78 @@ html{
 }
 .b-menu__item:hover .b-menu__link{
     color: #32cbb4;
+}
+.b-menu__item:hover .b-wrap_submenu{
+    opacity: 1;
+    visibility: visible;
+}
+.b-menu__item:hover .b-wrap_submenuLeft{
+    left: 0;
+}
+.b-menu__item:hover .b-wrap_submenuRight{
+    right: 0;
+}
+.b-wrap_submenu{
+    position: absolute;
+    top: 35px;
+    display: block;
+    width: 180px;
+    border: 5px solid transparent;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+    z-index: 100;
+    visibility: hidden;
+    opacity: 0;
+/*
+    -webkit-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+*/
+    transition: all 200ms;
+}
+.b-wrap_submenuLeft{
+/*    left: 9999px;*/
+    left: 0;
+}
+.b-wrap_submenuRight{
+/*    right: 9999px;*/
+    right: 0;
+}
+.b-menu__submenu{
+    background-color: #fff;
+}
+.b-menu__submenu_left{
+    text-align: left;
+}
+.b-menu__submenu_left .b-submenu__item{
+    padding-left: 20px;
+}
+.b-menu__submenu_right .b-submenu__item{
+    padding-right: 20px;
+}
+.b-menu__submenu_right{
+    text-align: right;
+}
+.b-submenu{
+    border: 1px solid #000;
+    border-radius: 3px;
+/*    border-top-right-radius: 0;*/
+/*    border-top-left-radius: 0;*/
+/*    border-top: none;*/
+    padding: 0;
+    list-style: none;
+}
+.b-submenu__item{
+    cursor: pointer;
+}
+.b-submenu__item:hover{
+    background-color: #bac3ca;
+}
+.b-submenu__link{
+    color: #000;
+}
+.b-submenu__item:hover .b-submenu__link{
+    color: #fff;
 }
 .b-section_wallpaper{
     margin-bottom: 40px;
@@ -2272,6 +2344,15 @@ html{
         display: block;
         margin-top: 10px;
     }
+}
+@media only screen 
+and (min-device-width: 667px) 
+and (max-device-width: 767px) 
+and (orientation: landscape) {
+    .col-iphone7Landscape-6{
+        width: 50%;
+    }
+        
 }
 @media (max-width: 680px){
     .b-newYear{
