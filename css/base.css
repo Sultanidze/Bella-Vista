@@ -1837,7 +1837,7 @@ html{
 }
 */
 .b-apartmentSlider .b-mainGallery__icon{
-    top: 30%;
+    /*top: 30%;*/
 }
 .b-apartmentSlider .b-mainGallery__icon .b-overlay__icon img{
     width: 44%;

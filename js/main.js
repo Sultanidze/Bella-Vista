@@ -181,7 +181,7 @@ $(".b-apartment__description, .b-season__block").hover(function(){})
 			,filesText = filesNum  + " файл"
 			,filesField = $('.b-responseForm .b-upload__text')	//вивід тексту к-ті файлів
 			;
-			console.log("dsclsdofcbsdklb");
+			
 		if (filesNum > 4){
 			filesText+="ов";
 		} else if (filesNum > 1){
